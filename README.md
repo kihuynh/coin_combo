@@ -1,6 +1,6 @@
 # Coin Combinations
 
-### John Rykken & Kimberly Huynh
+### Kimberly Huynh
 
 #### 2.8.2018  
 
@@ -14,7 +14,7 @@ Create a script that lets a user enter an amount of cents and shows the smallest
 2. Receive .15 cents
    Input .15cents
    Output: 1 nickel, 1 dime.
-3. 
+3.
 4.
 5.
 
@@ -25,7 +25,6 @@ Create a script that lets a user enter an amount of cents and shows the smallest
 
 ## Authors
 
-**John Rykken**
 **Kimberly Huynh**
 
 ## License
@@ -34,4 +33,4 @@ Licensed under the MIT License.
 
 <!-- ## Acknowledgments -->
 
-Copyright (c) 2018 **_John Rykken & Kimberly Huynh_**
+Copyright (c) 2018 **_Kimberly Huynh_**

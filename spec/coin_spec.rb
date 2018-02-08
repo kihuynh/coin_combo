@@ -4,9 +4,9 @@ require('coin')
 
 describe('Change') do
   describe('#counter') do
-    money = Change.new(0.01)
+    money = Change.new(100)
     it("will receive a penny will say a penny") do
-      expect(money.counter()).to(eq(0.01))
+      expect(money.counter()).to(eq("100 pennies"))
     end
     #it("receive ")
   end
