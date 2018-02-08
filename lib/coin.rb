@@ -20,12 +20,18 @@ class Change
   #  @coin /1
   # end
 
-  def counter
-    quarters = (@coin / 25).floor
-    pennies = (@coin / 1).floor
+  def counter()
+    coin_purse = @coin
+    quarters = (coin_purse / 25)
+    left_overs = quarters
+    # coins_left = (coin_purse % quarters)
+    # dimes = (coins_left - 10)
+    dimes = (left_overs % 10)
 
-    return "#{pennies} pennies"
+
+   return  "#{quarters} quarters, #{dimes} dimes, 0 nickels, 0 pennies"
   end
+  puts
 end
 
 #
