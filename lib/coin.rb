@@ -21,6 +21,7 @@ class Change
   # end
 
   def counter
+    quarters = (@coin / 25).floor
     pennies = (@coin / 1).floor
 
     return "#{pennies} pennies"
