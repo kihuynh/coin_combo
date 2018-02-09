@@ -27,8 +27,8 @@ class Change
     # coins_left = (coin_purse % quarters)
     # dimes = (coins_left - 10)
     dimes = (left_overs % 10)
-    # left_overs = dimes
-    # nickels = (left_overs % 5)
+    left_overs = dimes
+    nickels = (left_overs % 5)
 
     "#{quarters} quarters, #{dimes} dimes, #{nickels} nickels, 0 pennies"
   end
