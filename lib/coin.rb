@@ -21,17 +21,16 @@ class Change
   # end
 
   def counter()
-    coin_purse = @coin
-    quarters = (coin_purse / 25)
+    # coin_purse = @coin
+    quarters = (@coin / 25)
     left_overs = quarters
     # coins_left = (coin_purse % quarters)
     # dimes = (coins_left - 10)
     dimes = (left_overs % 10)
+    # left_overs = dimes
+    # nickels = (left_overs % 5)
 
-
-   return  "#{quarters} quarters, #{dimes} dimes, 0 nickels, 0 pennies"
+    "#{quarters} quarters, #{dimes} dimes, #{nickels} nickels, 0 pennies"
   end
   puts
 end
-
-#

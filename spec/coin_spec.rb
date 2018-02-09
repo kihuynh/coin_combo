@@ -13,5 +13,10 @@ describe('Change') do
       money = Change.new(35)
       expect(money.counter()).to(eq("1 quarters, 1 dimes, 0 nickels, 0 pennies"))
     end
+
+    it("will receive 35 will give 1 quarter and 1 dime") do
+      money = Change.new(40)
+      expect(money.counter()).to(eq("1 quarters, 1 dimes, 1 nickels, 0 pennies"))
+    end
   end
 end
