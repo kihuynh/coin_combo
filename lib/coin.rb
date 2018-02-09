@@ -26,11 +26,15 @@ class Change
     left_overs = quarters
     # coins_left = (coin_purse % quarters)
     # dimes = (coins_left - 10)
-    dimes = (left_overs % 10)
-    left_overs = dimes
-    nickels = (left_overs % 5)
+    # dimes = (left_overs % 10)
+    dimes = 0
+    # left_overs = dimes
+    # nickels = (left_overs % 5)
+    nickels = 0
 
     "#{quarters} quarters, #{dimes} dimes, #{nickels} nickels, 0 pennies"
   end
   puts
 end
+
+# if

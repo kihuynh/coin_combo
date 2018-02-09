@@ -14,9 +14,9 @@ describe('Change') do
       expect(money.counter()).to(eq("1 quarters, 1 dimes, 0 nickels, 0 pennies"))
     end
 
-    it("will receive 40 will give 1 quarter, 1 dime, 1 nickel") do
-      money = Change.new(40)
-      expect(money.counter()).to(eq("1 quarters, 1 dimes, 1 nickels, 0 pennies"))
-    end
+    # it("will receive 40 will give 1 quarter, 1 dime, 1 nickel") do
+    #   money = Change.new(40)
+    #   expect(money.counter()).to(eq("1 quarters, 1 dimes, 1 nickels, 0 pennies"))
+    # end
   end
 end
