@@ -4,10 +4,11 @@ class Change
   end
 
   #suggested to use an until loop (will run until false. in this case will run until no more money)
-  # def quarters
-  #   @coin / 25
-  # end
-  #
+  def quarters (coin)
+    (@coin / 25).floor
+  end
+
+
   # def dimes
   #  @coin / 10
   # end
@@ -22,17 +23,15 @@ class Change
 
   def counter()
     # coin_purse = @coin
-    quarters = (@coin / 25)
-    left_overs = quarters
-    # coins_left = (coin_purse % quarters)
-    # dimes = (coins_left - 10)
-    # dimes = (left_overs % 10)
     dimes = 0
-    # left_overs = dimes
-    # nickels = (left_overs % 5)
     nickels = 0
+    pennies = 0
+    quarters = (@coin / 25)
+    # left_overs = quarters
+    #find until loop usage to run until fail
+    dimes = (quarters % 10)
 
-    "#{quarters} quarters, #{dimes} dimes, #{nickels} nickels, 0 pennies"
+    "#{quarters} quarters, #{dimes} dimes, #{nickels} nickels, #{pennies} pennies"
   end
   puts
 end
